@@ -14,6 +14,9 @@
 		F83F93A7210A4CD10061066B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F83F93A5210A4CD10061066B /* LaunchScreen.storyboard */; };
 		F83F93B2210A4CD10061066B /* EmployeeManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F93B1210A4CD10061066B /* EmployeeManagerTests.swift */; };
 		F83F93BD210A4CD20061066B /* EmployeeManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F93BC210A4CD20061066B /* EmployeeManagerUITests.swift */; };
+		F83F93CC210A54B50061066B /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F93CB210A54B50061066B /* Employee.swift */; };
+		F83F93CE210A54C90061066B /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F93CD210A54C90061066B /* Manager.swift */; };
+		F83F93D0210A54D60061066B /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83F93CF210A54D60061066B /* Other.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F83F93B8210A4CD20061066B /* EmployeeManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmployeeManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83F93BC210A4CD20061066B /* EmployeeManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManagerUITests.swift; sourceTree = "<group>"; };
 		F83F93BE210A4CD20061066B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F83F93CB210A54B50061066B /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		F83F93CD210A54C90061066B /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		F83F93CF210A54D60061066B /* Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		F83F939B210A4CD10061066B /* EmployeeManager */ = {
 			isa = PBXGroup;
 			children = (
+				F83F93CA210A549A0061066B /* Entities */,
 				F83F939C210A4CD10061066B /* AppDelegate.swift */,
 				F83F939E210A4CD10061066B /* ViewController.swift */,
 				F83F93A0210A4CD10061066B /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				F83F93BE210A4CD20061066B /* Info.plist */,
 			);
 			path = EmployeeManagerUITests;
+			sourceTree = "<group>";
+		};
+		F83F93CA210A549A0061066B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F83F93CB210A54B50061066B /* Employee.swift */,
+				F83F93CD210A54C90061066B /* Manager.swift */,
+				F83F93CF210A54D60061066B /* Other.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F83F939F210A4CD10061066B /* ViewController.swift in Sources */,
+				F83F93CC210A54B50061066B /* Employee.swift in Sources */,
 				F83F939D210A4CD10061066B /* AppDelegate.swift in Sources */,
+				F83F93D0210A54D60061066B /* Other.swift in Sources */,
+				F83F93CE210A54C90061066B /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA72LHA8D9;
 				INFOPLIST_FILE = EmployeeManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vit.corp.EmployeeManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BA72LHA8D9;
 				INFOPLIST_FILE = EmployeeManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vit.corp.EmployeeManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
